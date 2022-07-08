@@ -1,0 +1,26 @@
+.navbar{
+    width: 100%;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+}
+
+.navleft, .navright{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navcenter{
+    flex: 6;
+}
+
+.navleft{
+    font-size: 20px;
+    margin-right: 10px;
+}
