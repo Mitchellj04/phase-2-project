@@ -8,7 +8,7 @@ const Header = () => {
             <span className='headerfirst'> Adventure </span>
             <span className='headersecond'> Blog </span>
         </div>
-        <img className='headerImg' src="headerIMG.jpg"/>
+        <img className='headerImg' src="/Images/headerIMG.jpg"/>
     </div>
   )
 }
