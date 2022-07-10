@@ -5,7 +5,7 @@ const About = () => {
     <div className='aboutMe'>
         <div className='aboutMeItem'>
             <span className='aboutMeTitle'>ABOUT ME</span>
-            <img /> 
+            <img src='/Images/kozMe.jpg'/> 
             <p>
             I have been passionate about the outdoors since I was a kid. My family would take an annual camping trip to the Adirondecks.
             This inspired me to try and travel more, since then I have been to majority of the carribean, all of the east coast, and even Australia. 

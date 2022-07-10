@@ -14,14 +14,22 @@
     align-items: center;
 }
 
+.aboutMeTitle{
+    margin: 10px;
+    padding: 5px;
+    width: 80%;
+    border-top: 1px solid rgb(131, 131, 131);
+    border-bottom: 1px solid rgb(131, 131, 131);
+    font-size: 15px;
+    font-weight: 600px;
+    text-align: center;
+}
 
-
-
-
-
-
-
-
+.listItem{
+    display: inline-block;
+    width: 50%;
+    margin-top: 10px;
+}
 
 .aboutMeList{
     list-style: none;
