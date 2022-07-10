@@ -1,0 +1,28 @@
+.aboutMe{
+    flex: 3;
+    margin: 20px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutMeItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+.aboutMeList{
+    list-style: none;
+}
