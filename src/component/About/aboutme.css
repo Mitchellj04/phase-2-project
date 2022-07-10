@@ -8,37 +8,29 @@
     align-items: center;
 }
 
-.aboutItem{
+.aboutMeItem{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.aboutTitle{
+.aboutMeTitle{
     margin: 10px;
     padding: 5px;
     width: 80%;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border-top: 1px solid rgb(131, 131, 131);
+    border-bottom: 1px solid rgb(131, 131, 131);
     font-size: 15px;
     font-weight: 600px;
     text-align: center;
 }
 
-.aboutItem > p{
-    padding: 15px;
-}
-
-.aboutItem > img {
-    margin: 10px
-}
-
-.aboutList{
-    list-style: none;
-    margin-bottom: 10px;
-}
-
 .listItem{
     display: inline-block;
     width: 50%;
+    margin-top: 10px;
+}
+
+.aboutMeList{
+    list-style: none;
 }

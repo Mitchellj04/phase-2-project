@@ -1,24 +1,23 @@
+import React from 'react'
 import './About.css'
 
 const About = () => {
   return (
-    <div className='aboutMe'>
-        <div className='aboutMeItem'>
-            <span className='aboutMeTitle'>ABOUT ME</span>
-            <img src='/Images/kozMe.jpg'/> 
-            <p>
-            I have been passionate about the outdoors since I was a kid. My family would take an annual camping trip to the Adirondecks.
+    <div className='about'>
+        <div className='aboutItem'>
+            <span className='aboutTitle'>ABOUT ME</span>
+            <img src="/Images/kozMe.jpg" />
+            <p>I have been passionate about the outdoors since I was a kid. My family would take an annual camping trip to the Adirondecks.
             This inspired me to try and travel more, since then I have been to majority of the carribean, all of the east coast, and even Australia. 
-            I plan to continue to travel the world and see new and exciting places. 
-            </p>
+             </p>
         </div>
-        <div className='aboutMeItem'>
-            <span className='aboutMeTitle'>CATEGORY</span>
-            <ul className='aboutMeList'>
-                <li className='listitem'>Mountains</li>
-                <li className='listitem'>Camping</li>
-                <li className='listitem'>Beach</li>
-                <li className='listitem'>City</li>
+        <div className='aboutItem'>
+            <span className='aboutTitle'>CATEGORY</span>
+            <ul className='aboutList'>
+                <li className='listItem'>Mountains</li>
+                <li className='listItem'>Camping</li>
+                <li className='listItem'>Beach</li>
+                <li className='listItem'>Town</li>
             </ul>
         </div>
     </div>

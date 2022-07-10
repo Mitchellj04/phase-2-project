@@ -1,14 +1,16 @@
-import React from 'react'
+import './Home.css'
 import Header from '../Header/Header'
+import Content from '../Content/Content'
 import About from '../About/About'
 
 const Home = () => {
   return (
     <>
-    <Header />
-    <div>
+      <Header />
+      <div className='home'>
+        <Content />
         <About />
-    </div>
+      </div>
     </>
   )
 }
