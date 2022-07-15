@@ -1,0 +1,48 @@
+.contact{
+    justify-content: center;
+    align-items: center;
+}
+
+.contactTitle{
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    font-size: 40px;
+    font-weight: 600px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.contactMain{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contactImg{
+    width: 50%;
+    object-fit: 100%;
+    align-items: center;
+}
+
+.contactPost{
+    width: 50%;
+    margin-left: 350px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.contactList{
+    list-style: none;
+    margin-bottom: 100px;
+}
+
+.listItem{
+    display: inline-block;
+    width: 50%;
+    margin-top: 20px;
+}
+

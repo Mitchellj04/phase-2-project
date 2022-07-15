@@ -1,11 +1,12 @@
 import React from 'react'
 import './Content.css'
 
+
 function Content() {
   return (
     <div className='content'>
         <div>
-            <h1>Blog Post</h1>
+            <h1>First Post</h1>
         </div>
         <img className='lighthouse' src="/Images/Lighthouse.jpg"></img>
         <div>

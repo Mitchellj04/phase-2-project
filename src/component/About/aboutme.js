@@ -1,6 +1,6 @@
-import './About.css'
+import './AboutMe.css'
 
-const About = () => {
+const AboutMe = () => {
   return (
     <div className='about'>
         <div className='aboutMeItem'>
@@ -13,16 +13,26 @@ const About = () => {
             </p>
         </div>
         <div className='aboutMeItem'>
+          <span className='aboutMeTitle'>FAVORITE PLACES VISITED</span>
+          <ul className='aboutMeList'>
+            <li className='listitem'>St. Thomas<br></br><img className="listImg" src="/Images/about/st-thomas.jpeg"/></li>
+            <li className='listitem'>Mexico<br></br><img className="listImg" src="/Images/about/mexico.jpg"/></li>
+            <li className='listitem'>Puerto Rico<br></br><img className="listImg" src="/Images/about/puerto-rico.jpg"/></li>
+            <li className='listitem'>Australia<br></br><img className="listImg" src="/Images/about/outback.jpg"/></li>
+
+          </ul>
+        </div>
+        <div className='aboutMeItem'>
             <span className='aboutMeTitle'>CATEGORY</span>
-            <ul className='aboutMeList'>
-                <li className='listitem'>Mountains</li>
-                <li className='listitem'>Camping</li>
-                <li className='listitem'>Beach</li>
-                <li className='listitem'>City</li>
+            <ul className='aboutMeList2'>
+                <li className='listitem2'>Mountains</li>
+                <li className='listitem2'>Camping</li>
+                <li className='listitem2'>Beach</li>
+                <li className='listitem2'>City</li>
             </ul>
         </div>
     </div>
   )
 }
 
-export default About
+export default AboutMe

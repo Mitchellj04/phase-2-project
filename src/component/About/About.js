@@ -1,5 +1,6 @@
 import React from 'react'
 import './About.css'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
@@ -14,9 +15,9 @@ const About = () => {
         <div className='aboutItem'>
             <span className='aboutTitle'>CATEGORY</span>
             <ul className='aboutList'>
-                <li className='listItem'>Mountains</li>
-                <li className='listItem'>Camping</li>
-                <li className='listItem'>Beach</li>
+                <li className='listItem'><Link className="link" to="/mountain">Mountain</Link></li>
+                <li className='listItem'><Link className="link" to="/camping">Camping</Link></li>
+                <li className='listItem'><Link className="link" to="/beach">Beach</Link></li>
                 <li className='listItem'>Town</li>
             </ul>
         </div>
