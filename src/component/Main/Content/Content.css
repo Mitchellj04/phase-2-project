@@ -1,0 +1,13 @@
+.content{
+    flex: 9;
+    padding-top: 20px;
+}
+
+.lighthouse{
+    width: 800px;
+    height: 500px;
+}
+
+.contentDescription{
+    width: 75%;
+}

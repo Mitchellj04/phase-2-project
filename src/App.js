@@ -1,7 +1,6 @@
 import NavBar from "./component/NavBar/NavBar";
 import Home from "./component/Main/Home"
 import Create from "./component/Create/Create";
-import About from "./component/About/About";
 import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 import AboutMe from "./component/About/AboutMe";
 import Beach from "./component/Post/Beach/Beach";
@@ -9,8 +8,14 @@ import Mountain from "./component/Post/Mountain/Mountain";
 import Camping from "./component/Post/Camping/Camping"
 import Town from "./component/Post/Town/Town"
 import Contact from "./component/Contact/Contact";
+import {data} from "./component/Main/PostData"
+import { useState } from "react";
+
+
 
 function App() {
+
+
   return (
     <Router>
       <NavBar />

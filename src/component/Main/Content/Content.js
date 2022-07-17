@@ -1,8 +1,10 @@
 import React from 'react'
+import {data} from "../PostData"
 import './Content.css'
+import DataCard from '../DataCard'
 
 
-function Content() {
+function Content(props) {
   return (
     <div className='content'>
         <div>
@@ -16,6 +18,9 @@ function Content() {
                 At the top of the cliff there is a Lighthouse where you can see across all of the beach and the surrounding town.
                 </p>
             </div>
+        </div>
+        <div className='content'>
+          {props.dataPost.map(datas => <DataCard className="content" dataObj={datas} key={datas.id} />)}
         </div>
     </div>
   )

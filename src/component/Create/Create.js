@@ -2,13 +2,6 @@ import React, {useState} from 'react'
 import './Create.css'
 
 function Create () {
-    // const [title, setTitle] = useState ("")
-    // const [description, setDescription] = useState ("")
-    // const [category, setCategory] = useState()
-    // const [file, setFile] = useState(null)
-    // console.log(description)
-    // console.log(title)
-    // console.log(category)
     const [data, setData] = useState({
         newtitle: "",
         descrip: "",
@@ -26,8 +19,8 @@ function handle(e){
 
 }
 
-function handelSubmit(){
-
+function handelSubmit(e){
+    e.preventdefault()
 }
 
   return (
