@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Introduction 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my Adventure blog!
 
-## Available Scripts
+## Getting Started 
 
-In the project directory, you can run:
+To be able to start the web page. 
 
-### `npm start`
+Go to the terminal and locate the folder in which the project is saved. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Once there make sure you have npm installed and type in the code 'npm start'
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This will start a new local host to run the server in your browser. 
 
-### `npm test`
+## Gathering the Data
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To be able to fetch the data from the json server you will also need to run the data on a local host. 
 
-### `npm run build`
+First you need to locate the folder within the project folder that contains the data. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Next you have to type in the termianl 'json-server --watch --port 4000 Postdata.json
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This will open a server for the json file to be fetch to be displayed on the webpage.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### How it works 
 
-### `npm run eject`
+-On the home page you have a collect of blog posts that you can scroll through. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-At the top of the page is the navagation menu. The navagation menu consists of clickable links to redirect you to another page. As well as an instagram icon which will redirect you to my instagram page. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-The links in the navagation menu will redirect you to other pages such as 
+    -About 
+    -Create 
+    -Contact 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+-The create page is the most essential out of the three of these. The create page allows you to create a new blog post. You are able to add an image with the icon on the left. Then type in a title for the post. As well as add a description to the post. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+-To be able to see your new post all you have to do is click the home link at the top to be redirected to the main home page. 
 
-## Learn More
+### Purpose 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+I have been traveling around the US and parts of the world since I was young. I started my own instagram page when I was in Australia to document some of my trip. On of my passions is taking pictures and exploring new places. So what better way to do so then to create my own blog to document my journey for others to see. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Created By:
 
-### Code Splitting
+Justin Mitchell 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+[Youtube]
 
-### Analyzing the Bundle Size
+[Blog]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Github] 

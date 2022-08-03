@@ -18,7 +18,7 @@ const About = () => {
                 <li className='listItem'><Link className="link" to="/mountain">Mountain</Link></li>
                 <li className='listItem'><Link className="link" to="/camping">Camping</Link></li>
                 <li className='listItem'><Link className="link" to="/beach">Beach</Link></li>
-                <li className='listItem'>Town</li>
+                <li className='listItem'><Link className="link" to="/town">Town</Link></li>
             </ul>
         </div>
     </div>

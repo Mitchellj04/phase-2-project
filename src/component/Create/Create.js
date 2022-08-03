@@ -1,94 +1,74 @@
 import React, {useState} from 'react'
 import './Create.css'
 
-function Create () {
-    const [data, setData] = useState({
-        newtitle: "",
-        descrip: "",
-        category: "",
-    })
+function Create ({handleSubmit, handleChange, createData}) {
+//     const [data, setData] = useState({
+//         newtitle: "",
+//         descrip: "",
+//         category: "",
+//     })
 
 
-console.log(data);
+    // console.log(data);
 
 
-function handle(e){
-    const newdata = {...data}
-    newdata[e.target.id]= e.target.value
-    setData(newdata)
+    // function handle(e){
+    //     const newdata = {...data}
+    //     newdata[e.target.id]= e.target.value
+    //     setData(newdata)
 
-}
+    // }
 
-function handelSubmit(e){
-    e.preventdefault()
-}
+    // const handleSubmit2 = (e) => {
+    //     e.preventDefault()
+    //     console.log(data)
+    // }
 
   return (
     <div className='create'>
-        <form className='createForm' onSubmit={handelSubmit}>
+        <form className='createForm' onSubmit={handleSubmit}>
             <div className='createFormFile'>
                 <label htmlFor='fileInput'>
                     <i className="fileIcon fa-solid fa-folder-plus"></i>
                 </label>
                 <input 
                     type="file" 
-                    id="fileInput" 
+                    id="fileInput"
+                    name="image"
+                    value={createData.image}
                     style={{display:"none"}} 
+                    onChange={handleChange}
                     />
                 <input 
                     type="text" 
-                    id="newtitle"
-                    value={data.newtitle}
+                    id="title"
+                    name="title"
+                    value={createData.title}
                     placeholder='Title' 
                     className='createTitle'
-                    onChange={(e) => handle(e)}
+                    onChange={handleChange}
                     />
             </div>
             <div className='createFormFile'>
                 <textarea
                     placeholder='Write about your experience you have had.'
                     type="text"
-                    id="descrip"
-                    value={data.descrip}
+                    name="description"
+                    id="description"
+                    value={createData.description}
                     className='createTitle textStory'
-                    onChange={(e) => handle(e)}
+                    onChange={handleChange}
                 ></textarea>
-                <button className='submitPost'>Create</button>
+                <button className='submitPost' type='submit'>Create</button>
             </div>
             <div className='checkbox'>
                 <label>CATEGORIES</label>
-                <label >
-                    <input 
-                        id="mountain" 
-                        type="checkbox" 
-                        className='inputCheck' 
-                        onClick={(e) => handle(e)}
-                        >
-                    </input>Mountain</label>
-                <label>
-                    <input 
-                        id="camping" 
-                        type="checkbox" 
-                        className='inputCheck'
-                        onClick={(e) => handle(e)}
-                        >
-                    </input>Camping</label>
-                <label>
-                    <input 
-                        id="beach" 
-                        type="checkbox" 
-                        className='inputCheck'
-                        onClick={(e) => handle(e)}
-                        >
-                    </input>Beach</label>
-                <label>
-                    <input 
-                        id="town" 
-                        type="checkbox" 
-                        className='inputCheck'
-                        onClick={(e) => handle(e)}
-                        >
-                    </input>Town</label>
+                <select value={createData.category} onSelect={handleChange} >
+                    <option name="category" id="mountain" >Mountain</option>
+                    <option id="camping">Camping</option>
+                    <option id="beach">Beach</option>
+                    <option id="town">Town</option>
+                </select>
             </div>
         </form>
     </div>

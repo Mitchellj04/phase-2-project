@@ -4,23 +4,11 @@ import './Content.css'
 import DataCard from '../DataCard'
 
 
-function Content(props) {
+function Content({postList}) {
   return (
-    <div className='content'>
-        <div>
-            <h1>First Post</h1>
-        </div>
-        <img className='lighthouse' src="/Images/Lighthouse.jpg"></img>
-        <div>
-            <div>
-                <p className='contentDescription'>
-                Austrlia has some of the most beautiful beaches you can visit. This beach is on the northern end of NSW in a town called DeeWhy. 
-                At the top of the cliff there is a Lighthouse where you can see across all of the beach and the surrounding town.
-                </p>
-            </div>
-        </div>
+    <div className='content'> 
         <div className='content'>
-          {props.dataPost.map(datas => <DataCard className="content" dataObj={datas} key={datas.id} />)}
+          {postList.map(data2 => <DataCard className="content" dataObj={data2} key={data2.title} />)}
         </div>
     </div>
   )

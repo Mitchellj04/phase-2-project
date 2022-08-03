@@ -1,0 +1,13 @@
+.TownTitle{
+    margin: 10px;
+    margin-left: 50px;
+    padding: 5px;
+    width: 80%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    font-size: 40px;
+    font-weight: 600px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

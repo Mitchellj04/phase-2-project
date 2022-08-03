@@ -7,6 +7,7 @@ const Beach = () => {
         <div className='beachTitle'>
             <span>Beaches</span>
         </div>
+        <div></div>
     </div>
   )
 }

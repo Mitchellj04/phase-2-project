@@ -3,17 +3,15 @@ import { useState } from 'react'
 import Header from '../Header/Header'
 import Content from './Content/Content'
 import About from '../About/About'
-import {data} from "./PostData"
 
-function Home() {
+function Home({postList}) {
 
-  const [dataPost, setDataPost] = useState(data)
 
   return (
     <>
       <Header />
       <div className='home'>
-        <Content dataPost={dataPost} />
+        <Content postList={postList} />
         <About />
       </div>
     </>
