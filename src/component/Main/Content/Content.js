@@ -1,7 +1,6 @@
 import React from 'react'
-import {data} from "../PostData"
 import './Content.css'
-import DataCard from '../DataCard'
+import DataCard from '../DataCard/DataCard'
 
 
 function Content({postList}) {

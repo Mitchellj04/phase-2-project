@@ -1,28 +1,35 @@
 import React, {useState} from 'react'
 import './Create.css'
 
-function Create ({handleSubmit, handleChange, createData}) {
-//     const [data, setData] = useState({
-//         newtitle: "",
-//         descrip: "",
-//         category: "",
-//     })
+function Create ({setPostList, postList, handleCheckBox}) {
 
+    const [createData, setCreateData] = useState({
+        id: '',
+        title:'',
+        description:'',
+        category:'',
+        imgage:''
+  })
 
-    // console.log(data);
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        console.log(postList)
+        setPostList([createData,...postList])
+        // setCreateData({
+        //   id: '',
+        //   title: '',
+        //   description: '',
+        //   category: '',
+        //   image: ''
+        // })
+        console.log('hello')
+      }
 
+      const handleChange = (e) => {
+        setCreateData({...createData, [e.target.name]: e.target.value})
+        console.log(e.target.value)
+    }
 
-    // function handle(e){
-    //     const newdata = {...data}
-    //     newdata[e.target.id]= e.target.value
-    //     setData(newdata)
-
-    // }
-
-    // const handleSubmit2 = (e) => {
-    //     e.preventDefault()
-    //     console.log(data)
-    // }
 
   return (
     <div className='create'>
@@ -32,11 +39,10 @@ function Create ({handleSubmit, handleChange, createData}) {
                     <i className="fileIcon fa-solid fa-folder-plus"></i>
                 </label>
                 <input 
-                    type="file" 
-                    id="fileInput"
+                    type="text"
+                    id="imageInput"
                     name="image"
-                    value={createData.image}
-                    style={{display:"none"}} 
+                    value={createData.image} 
                     onChange={handleChange}
                     />
                 <input 
@@ -63,14 +69,17 @@ function Create ({handleSubmit, handleChange, createData}) {
             </div>
             <div className='checkbox'>
                 <label>CATEGORIES</label>
-                <select value={createData.category} onSelect={handleChange} >
-                    <option name="category" id="mountain" >Mountain</option>
-                    <option id="camping">Camping</option>
-                    <option id="beach">Beach</option>
-                    <option id="town">Town</option>
+                <select onChange={handleCheckBox}>
+                    <option value={createData.category} name="category" id="mountain" >Mountain</option>
+                    <option value={createData.category} name="category" id="camping" >Camping</option>
+                    <option value={createData.category} name="category" id="beach" >Beach</option>
+                    <option value={createData.category} name="category" id="town" >Town</option>
                 </select>
             </div>
         </form>
+        <div>
+            <img className="journeyPic" src="/Images/sharejourney.jpg"></img>
+        </div>
     </div>
   )
 }
