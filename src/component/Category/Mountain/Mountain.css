@@ -11,24 +11,27 @@
     align-items: center;
 }
 
+.mainDiv{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 10%;
+}
+
 .post{
-    width: 500px;
+    width: 50%;
     margin: 0px 25px 40px 25px;
-    display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
-    flex: 9;
+    padding-left: 200px;
+    
 }
 
 .postInfo{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.postmain{
-    display: flex;
-    flex-direction: column;
 }
 
 .postmain > img {

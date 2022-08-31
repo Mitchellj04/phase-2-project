@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
+import { useHistory } from 'react-router-dom';
 import './Create.css'
 
-function Create ({setPostList, postList, handleCheckBox}) {
-
+function Create ({setPostList, postList}) {
+    const history = useHistory();
     const [createData, setCreateData] = useState({
         id: '',
         title:'',
@@ -15,6 +16,7 @@ function Create ({setPostList, postList, handleCheckBox}) {
         e.preventDefault()
         console.log(postList)
         setPostList([createData,...postList])
+        history.push('/')
         // setCreateData({
         //   id: '',
         //   title: '',
@@ -28,6 +30,11 @@ function Create ({setPostList, postList, handleCheckBox}) {
       const handleChange = (e) => {
         setCreateData({...createData, [e.target.name]: e.target.value})
         console.log(e.target.value)
+    }
+    
+    const handleSelect = (e) => {
+        setCreateData({...createData, [e.target.name]: e.target.id})
+        console.log(e.target.id)
     }
 
 
@@ -69,12 +76,10 @@ function Create ({setPostList, postList, handleCheckBox}) {
             </div>
             <div className='checkbox'>
                 <label>CATEGORIES</label>
-                <select onChange={handleCheckBox}>
-                    <option value={createData.category} name="category" id="mountain" >Mountain</option>
-                    <option value={createData.category} name="category" id="camping" >Camping</option>
-                    <option value={createData.category} name="category" id="beach" >Beach</option>
-                    <option value={createData.category} name="category" id="town" >Town</option>
-                </select>
+                Mountain<input name="category" value={createData.select} type="checkbox" id="mountain" onChange={handleSelect}/>
+                Camping<input name="category" value={createData.select} type="checkbox" id="camping" onChange={handleSelect}/>
+                Beach<input name="category" value={createData.select} type="checkbox" id="beach" onChange={handleSelect}/>
+                Town<input name="category" value={createData.select} type="checkbox" id="town" onChange={handleSelect}/>
             </div>
         </form>
         <div>

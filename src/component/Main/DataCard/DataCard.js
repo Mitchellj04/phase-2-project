@@ -1,7 +1,7 @@
 import React from 'react'
 import './DataCard.css'
 
-function DataCard({dataObj: {title, category,description, image}}) {
+function DataCard({dataObj: {title, category, description, image}}) {
   return (
     <div className='content'>
           <h1>{title}</h1>
