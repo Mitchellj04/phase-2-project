@@ -1,45 +1,63 @@
 .about{
     flex: 3;
     margin: 20px;
-    padding-bottom: 30px;
     border-radius: 10px;
+    align-items: center;
+}
+
+.aboutMeItem{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.aboutItem{
-    display: flex;
-    flex-direction: column;
+.aboutMeItem > p {
+    margin: 20px;
+    padding: 20px;
+    border-top: 1px solid rgb(131, 131, 131);
+    width: 80%;
     align-items: center;
 }
 
-.aboutTitle{
+.aboutMeTitle{
     margin: 10px;
     padding: 5px;
     width: 80%;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border-top: 1px solid rgb(131, 131, 131);
+    border-bottom: 1px solid rgb(131, 131, 131);
     font-size: 15px;
     font-weight: 600px;
     text-align: center;
-}
-
-.aboutItem > p{
-    padding: 15px;
-}
-
-.aboutItem > img {
-    margin: 10px
-}
-
-.aboutList{
-    list-style: none;
-    margin-bottom: 10px;
 }
 
 .listItem{
     display: inline-block;
     width: 50%;
     margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+
+.aboutMeList{
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.aboutMeList2{
+    list-style: none;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.listImg{
+    width: 200px;
+    margin-right: 20px;
+}
+
+.listItem2{
+    display: inline-block;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }

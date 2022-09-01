@@ -5,36 +5,37 @@ import './Create.css'
 function Create ({setPostList, postList}) {
     const history = useHistory();
     const [createData, setCreateData] = useState({
-        id: '',
+        id:'',
         title:'',
         description:'',
         category:'',
-        imgage:''
+        image:''
   })
+
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log(postList)
-        setPostList([createData,...postList])
+        const blog = createData
+        // console.log(postList)
+        // setPostList([createData,...postList])
         history.push('/')
-        // setCreateData({
-        //   id: '',
-        //   title: '',
-        //   description: '',
-        //   category: '',
-        //   image: ''
-        // })
-        console.log('hello')
+        fetch('http://localhost:4000/data2',{
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify(createData)
+        }).then((response) => {
+            console.log(response)
+        })
       }
 
       const handleChange = (e) => {
         setCreateData({...createData, [e.target.name]: e.target.value})
-        console.log(e.target.value)
+        // console.log(e.target.value)
     }
     
     const handleSelect = (e) => {
         setCreateData({...createData, [e.target.name]: e.target.id})
-        console.log(e.target.id)
+        // console.log(e.target.id)
     }
 
 

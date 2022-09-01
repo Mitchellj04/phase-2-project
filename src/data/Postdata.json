@@ -1,20 +1,20 @@
 {
-  "data2" : [
-      {
-        "id": 1,
-        "title": "Palm Beach",
-        "description": "Austrlia has some of the most beautiful beaches you can visit. This beach is on the northern end of NSW in a town called Palm Beach. At the top of the cliff there is a Lighthouse where you can see across all of the beach and the surrounding town. The ligthouse itself is called Barrenjoey Ligthhouse.",
-        "category": "Beach",
-        "image": "./Images/Lighthouse.jpg"
-      },
-      {
-        "id": 2,
-        "title": "Elvina Bay",
-        "description": "This was an awesome trip that we had to one of my friends houses. We had to take a taxi to an island. The sunset was amazing here and the views were even better.",
-        "category": "Beach",
-        "image": "./Images/elvinabay.jpg"
-      }, 
-      {
+  "data2": [
+    {
+      "id": 1,
+      "title": "Palm Beach",
+      "description": "Austrlia has some of the most beautiful beaches you can visit. This beach is on the northern end of NSW in a town called Palm Beach. At the top of the cliff there is a Lighthouse where you can see across all of the beach and the surrounding town. The ligthouse itself is called Barrenjoey Ligthhouse.",
+      "category": "Beach",
+      "image": "./Images/Lighthouse.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Elvina Bay",
+      "description": "This was an awesome trip that we had to one of my friends houses. We had to take a taxi to an island. The sunset was amazing here and the views were even better.",
+      "category": "Beach",
+      "image": "./Images/elvinabay.jpg"
+    },
+    {
       "id": 3,
       "title": "Figure 8 Pools",
       "description": "We took a drive to one of the most popular tourist attractions in the area. It is called figure 8 pools. After about a 2 hour drive from Sydney, there is another hour and a half hike down to this beach. From the beach the figure 8 pools is just around the corner. It can only be seen during certain low tides and is hard to get to. Well worth the trip though.",
@@ -29,7 +29,7 @@
       "image": "./Images/camping/newcastlecamp.jpg"
     },
     {
-     "id": 5,
+      "id": 5,
       "title": "Wattamalla Falls",
       "description": "Wattamalla Falls is in one of the surrounding national parks outside of Sydney. We took an uber to the enterance of the park which happened to be closed so we walk about 30 - 45 minutes to get to the actual falls. The walk was worth the hike though after seeing the view above. Although it was winter and after jumping in the water our opinions may have slightly changed. ",
       "category": "Mountain/Beach",
@@ -37,10 +37,24 @@
     },
     {
       "id": 6,
-       "title": "Upstate Newyork | Adirondacks",
-       "description": "This is one of my favorite places to visit in the US. Ever since I was a little kid we have been going camping in upstate Newyork to the Adirondack Mountains. This is in a town called Speculator Newyork. We always bring out boat up with us and camp out for the day on the beach. This year my brother and I brought up our seadoo along for the trip as well.",
-       "category": "Camping",
-       "image": "./Images/camping/speculator.jpg"
-     }
+      "title": "Upstate Newyork | Adirondacks",
+      "description": "This is one of my favorite places to visit in the US. Ever since I was a little kid we have been going camping in upstate Newyork to the Adirondack Mountains. This is in a town called Speculator Newyork. We always bring out boat up with us and camp out for the day on the beach. This year my brother and I brought up our seadoo along for the trip as well.",
+      "category": "Camping",
+      "image": "./Images/camping/speculator.jpg"
+    },
+    {
+      "title": "Elvina Bay - Sebs House",
+      "description": "Elvina Bay sebs",
+      "category": "beach",
+      "image": "https://1.bp.blogspot.com/-Xjn6eBMuiWc/X37orjiHryI/AAAAAAAA_kw/qZhgh_O77PMVs6qiKgR6y02oOXcKmv9QACLcBGAsYHQ/s1920/IMG_20200912_112342.jpg",
+      "id": 7
+    },
+    {
+      "id": 8,
+      "title": "dfvdv",
+      "description": "dfvdfv",
+      "category": "mountain",
+      "image": "https://img.aussiebushwalking.com/img/nsw/sydney/elvina-bay-loop/10709.jpg"
+    }
   ]
-}  
+}

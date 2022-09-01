@@ -7,7 +7,7 @@ function Content({postList}) {
   return (
     <div className='content'> 
         <div className='content'>
-          {postList.map(data2 => <DataCard className="content" dataObj={data2} key={data2.title} />)}
+          {postList.map(data2 => <DataCard className="content" dataObj={data2} key={data2.id} />)}
         </div>
     </div>
   )

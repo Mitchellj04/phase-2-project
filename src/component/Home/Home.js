@@ -1,8 +1,8 @@
 import './Home.css'
 import { useState } from 'react'
-import Header from '../../Header/Header'
-import Content from '../Content/Content'
-import About from '../../About/About'
+import Header from '../Header/Header'
+import Content from '../Posts/Content/Content'
+import About from '../About/AboutMe'
 
 function Home({postList}) {
 
