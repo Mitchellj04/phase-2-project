@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { useHistory } from 'react-router-dom';
 import './Create.css'
 
-function Create ({setPostList, postList}) {
+function Create () {
     const history = useHistory();
     const [createData, setCreateData] = useState({
         id:'',
@@ -15,11 +15,9 @@ function Create ({setPostList, postList}) {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        const blog = createData
         // console.log(postList)
-        // setPostList([createData,...postList])
         history.push('/')
-        fetch('http://localhost:4000/data2',{
+        fetch('http://localhost:4001/data2',{
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(createData)

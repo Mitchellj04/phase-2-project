@@ -43,18 +43,11 @@
       "image": "./Images/camping/speculator.jpg"
     },
     {
+      "id": 7,
       "title": "Elvina Bay - Sebs House",
-      "description": "Elvina Bay sebs",
+      "description": "We had a create time when we took a trip to sebs house. We had to take a boat over to the island that is in Elvina Bay. All the houses there are remote and there is no road that leads over to the island.",
       "category": "beach",
-      "image": "https://1.bp.blogspot.com/-Xjn6eBMuiWc/X37orjiHryI/AAAAAAAA_kw/qZhgh_O77PMVs6qiKgR6y02oOXcKmv9QACLcBGAsYHQ/s1920/IMG_20200912_112342.jpg",
-      "id": 7
-    },
-    {
-      "id": 8,
-      "title": "dfvdv",
-      "description": "dfvdfv",
-      "category": "mountain",
-      "image": "https://img.aussiebushwalking.com/img/nsw/sydney/elvina-bay-loop/10709.jpg"
+      "image": "https://1.bp.blogspot.com/-Xjn6eBMuiWc/X37orjiHryI/AAAAAAAA_kw/qZhgh_O77PMVs6qiKgR6y02oOXcKmv9QACLcBGAsYHQ/s1920/IMG_20200912_112342.jpg"
     }
   ]
 }

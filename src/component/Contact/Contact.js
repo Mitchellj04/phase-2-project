@@ -2,6 +2,8 @@ import React from 'react'
 import './Contact.css'
 
 const Contact = () => {
+ 
+
   return (
     <div className='contact'>
         <div className='contactTitle'>
@@ -24,7 +26,6 @@ const Contact = () => {
                         <li className='listItem'>Address: PO Box #2 Newport RI, 02840</li>
                     </ul>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -32,5 +33,6 @@ const Contact = () => {
     </div>
   )
 }
+
 
 export default Contact

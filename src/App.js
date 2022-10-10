@@ -17,7 +17,7 @@ const [postList, setPostList] = useState([])
 
 
 useEffect(() => {
- fetch('http://localhost:4000/data2')
+ fetch('http://localhost:4001/data2')
  .then(resp => resp.json())
  .then(data2 => {
    setPostList(data2)
