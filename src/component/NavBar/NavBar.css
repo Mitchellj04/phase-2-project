@@ -44,3 +44,12 @@
     font-size: 18px;
     cursor: pointer;
 }
+
+.titleSearch{
+    border:none;
+}
+
+.searchButton{
+    border:none;
+    background: none;
+}

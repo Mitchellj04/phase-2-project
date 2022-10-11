@@ -13,11 +13,13 @@ import { useEffect, useState } from "react";
 
 function App() {
 const [postList, setPostList] = useState([])
-// console.log(postList)
+
+
+
 
 
 useEffect(() => {
- fetch('http://localhost:4001/data2')
+ fetch('http://localhost:5000/data2')
  .then(resp => resp.json())
  .then(data2 => {
    setPostList(data2)
@@ -27,7 +29,7 @@ useEffect(() => {
 
   return (
     <Router>
-      <NavBar />
+      <NavBar postList={postList} />
       <Switch>
         <Route exact path="/">
           <Home postList={postList} />

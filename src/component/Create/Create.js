@@ -17,7 +17,7 @@ function Create () {
         e.preventDefault()
         // console.log(postList)
         history.push('/')
-        fetch('http://localhost:4001/data2',{
+        fetch('http://localhost:5000/data2',{
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(createData)

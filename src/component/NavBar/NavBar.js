@@ -3,18 +3,10 @@ import { Link } from 'react-router-dom';
 import "./NavBar.css";
 import data2 from '../../data/Postdata.json'
 
-const NavBar = () => {
-  const [title, setTitle] = useState()
-  const [dataTitle, setDataTitle] = useState([])
+const NavBar = ({postList}) => {
 
 
-  const handleChange = (e) => {
-      setTitle(e.target.value)
-  }
-
-  const handleSearch = (data2) => {
-      console.log(data2.title)
-  }
+  
   return (
     <div className="navbar">
         <div className="navleft"><a href='https://www.instagram.com/live.lifeandtravel/?hl=en'><i className="fa-brands fa-instagram"></i></a></div>
@@ -27,8 +19,8 @@ const NavBar = () => {
             </ul>
         </div>
         <div className='navright'>
-            <button onClick={handleSearch}><i className=" navsearch fa-solid fa-magnifying-glass"></i></button>
-            <input type="text" placeholder='Search Post ...' onChange={handleChange}></input>
+            <button className="searchButton"><i className=" navsearch fa-solid fa-magnifying-glass"></i></button>
+            <input className="titleSearch" type="text" placeholder='Search Post ...'></input>
         </div>
     </div>
   )

@@ -2,27 +2,10 @@ import React, { useState } from 'react'
 
 
 const Test = () => {
-    const [word, setWordCount] = useState("")
-    const [count, setCount] = useState(0)
-    const [previous, setPrevious] = useState(0)
 
-    const handleChange = (e) => {
-        setWordCount(e.target.value)
-        console.log(word)
-    }
-
-    const handleClick = () => {
-        let counter = word.length
-        setCount(counter)
-        setPrevious(count + counter)
-        console.log(previous)
-    }
-
+   
   return (
     <div>
-        <input type="text" placeholder="type words..." onChange={handleChange}></input>
-        <button onClick={handleClick}>Submit Text</button>
-        <p>There are {count} letters in this word</p>
     </div>
   )
 }
