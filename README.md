@@ -18,7 +18,7 @@ To be able to fetch the data from the json server you will also need to run the 
 
 First you need to locate the folder within the project folder that contains the data. 
 
-Next you have to type in the termianl 'json-server --watch --port 4000 Postdata.json
+Next you have to type in the termianl 'json-server --watch --port (desired port, example: 4000) Postdata.json
 
 This will open a server for the json file to be fetch to be displayed on the webpage.
 
