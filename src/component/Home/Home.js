@@ -14,7 +14,6 @@ function Home({postList, setTitle, title}) {
       <Header />
       <div className='home'>
         <Content postList={postList} />
-        {/* <Test postList={postList} /> */}
         <About />
       </div>
     </>
