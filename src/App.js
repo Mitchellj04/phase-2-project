@@ -15,9 +15,6 @@ function App() {
 const [postList, setPostList] = useState([])
 
 
-
-
-
 useEffect(() => {
  fetch('http://localhost:5000/data2')
  .then(resp => resp.json())
@@ -29,7 +26,7 @@ useEffect(() => {
 
   return (
     <Router>
-      <NavBar postList={postList} />
+      <NavBar postList={postList} setPostList={setPostList}/>
       <Switch>
         <Route exact path="/">
           <Home postList={postList} />

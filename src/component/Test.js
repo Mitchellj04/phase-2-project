@@ -1,11 +1,19 @@
 import React, { useState } from 'react'
 
 
+
 const Test = () => {
+    
+
+     
+      
+
 
    
   return (
     <div>
+        <input type="text" placeholder='Find Here ...'></input>
+        <button>Find Me!</button>
     </div>
   )
 }

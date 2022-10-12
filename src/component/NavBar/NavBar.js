@@ -1,12 +1,26 @@
 import {useState, React} from 'react';
 import { Link } from 'react-router-dom';
 import "./NavBar.css";
-import data2 from '../../data/Postdata.json'
-
-const NavBar = ({postList}) => {
 
 
-  
+const NavBar = ({postList, blogTitle, setPostList}) => {
+
+  const [searchBlog, setSearchBlog] = useState()
+
+  const handleChange = (e) => {
+    let finder = e.target.value
+    setSearchBlog(finder)
+  }
+
+  const handleClick = (e) => {
+    e.preventDefault()
+    let filtered = postList.filter((item) => item.title.toUpperCase().includes(searchBlog.toUpperCase()))
+    setPostList(filtered)
+  }
+
+  console.log(blogTitle)
+
+
   return (
     <div className="navbar">
         <div className="navleft"><a href='https://www.instagram.com/live.lifeandtravel/?hl=en'><i className="fa-brands fa-instagram"></i></a></div>
@@ -19,8 +33,8 @@ const NavBar = ({postList}) => {
             </ul>
         </div>
         <div className='navright'>
-            <button className="searchButton"><i className=" navsearch fa-solid fa-magnifying-glass"></i></button>
-            <input className="titleSearch" type="text" placeholder='Search Post ...'></input>
+            <button onClick={handleClick} className="searchButton"><i className=" navsearch fa-solid fa-magnifying-glass"></i></button>
+            <input onChange={handleChange} className="titleSearch" type="text" placeholder='Search Post ...'></input>
         </div>
     </div>
   )

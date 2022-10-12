@@ -24,14 +24,17 @@ This will open a server for the json file to be fetch to be displayed on the web
 
 ### How it works 
 
--On the home page you have a collect of blog posts that you can scroll through. 
+-On the home page you have a collection of blog posts that you can scroll through. 
 
 -At the top of the page is the navagation menu. The navagation menu consists of clickable links to redirect you to another page. As well as an instagram icon which will redirect you to my instagram page. 
 
 -The links in the navagation menu will redirect you to other pages such as 
     -About 
+        -The About page will give a little more indepth look into my background. Such as the places I have traveled to and also has links to some of the posts based on categories
     -Create 
+        -This is where you will be able to create a new blog to be added to the main home page. 
     -Contact 
+        -The contact page gives information about how to contact me. This is if anyone would like to have their post featured on the page or would like to send me pictures from their trips. 
 
 -The create page is the most essential out of the three of these. The create page allows you to create a new blog post. You are able to add an image with the icon on the left. Then type in a title for the post. As well as add a description to the post. 
 
