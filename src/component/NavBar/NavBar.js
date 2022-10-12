@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import "./NavBar.css";
 
 
-const NavBar = ({postList, blogTitle, setPostList}) => {
+const NavBar = ({postList, setPostList}) => {
 
   const [searchBlog, setSearchBlog] = useState()
 

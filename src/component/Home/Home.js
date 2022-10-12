@@ -4,9 +4,8 @@ import Header from '../Header/Header'
 import Content from '../Posts/Content/Content'
 import About from '../About/AboutMe'
 
-function Home({postList, setTitle, title}) {
+function Home({postList}) {
 
-  
 
   return (
     <>
