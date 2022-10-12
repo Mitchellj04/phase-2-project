@@ -18,7 +18,7 @@ const NavBar = ({postList, blogTitle, setPostList}) => {
     setPostList(filtered)
   }
 
-  console.log(blogTitle)
+  console.log(postList)
 
 
   return (

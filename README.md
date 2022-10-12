@@ -28,6 +28,8 @@ This will open a server for the json file to be fetch to be displayed on the web
 
 -At the top of the page is the navagation menu. The navagation menu consists of clickable links to redirect you to another page. As well as an instagram icon which will redirect you to my instagram page. 
 
+-On the right side of the page is the search bar. In the search field if you would like to search for the title of a blog you type in the title and then click on the search button to the left of the input field to display results. 
+
 -The links in the navagation menu will redirect you to other pages such as 
     -About 
         -The About page will give a little more indepth look into my background. Such as the places I have traveled to and also has links to some of the posts based on categories
