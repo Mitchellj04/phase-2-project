@@ -25,14 +25,14 @@
       "id": 4,
       "title": "Beach Camp Trip",
       "description": "We took a drive up north to nine miles beach in newcastle. There was no one insite on the beach. We set up camp and hung out for the day and night. Some of our friends went surfing in the morning, although the swells were to big for me to deal with. This is only one of the few times I have camped on a beach. ",
-      "category": "Beach/Camping",
+      "category": "Camping",
       "image": "./Images/camping/newcastlecamp.jpg"
     },
     {
       "id": 5,
       "title": "Wattamalla Falls",
       "description": "Wattamalla Falls is in one of the surrounding national parks outside of Sydney. We took an uber to the enterance of the park which happened to be closed so we walk about 30 - 45 minutes to get to the actual falls. The walk was worth the hike though after seeing the view above. Although it was winter and after jumping in the water our opinions may have slightly changed. ",
-      "category": "Mountain/Beach",
+      "category": "Beach",
       "image": "./Images/mountains/wattamalla.jpg"
     },
     {
@@ -46,7 +46,7 @@
       "id": 7,
       "title": "Elvina Bay - Sebs House",
       "description": "We had a create time when we took a trip to sebs house. We had to take a boat over to the island that is in Elvina Bay. All the houses there are remote and there is no road that leads over to the island.",
-      "category": "beach",
+      "category": "Beach",
       "image": "https://1.bp.blogspot.com/-Xjn6eBMuiWc/X37orjiHryI/AAAAAAAA_kw/qZhgh_O77PMVs6qiKgR6y02oOXcKmv9QACLcBGAsYHQ/s1920/IMG_20200912_112342.jpg"
     }
   ]

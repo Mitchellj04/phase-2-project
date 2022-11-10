@@ -1,14 +1,17 @@
 import React from 'react'
 import './Content.css'
 import DataCard from '../DataCard/DataCard'
+import {useState} from 'react'
 
 
-function Content({postList}) {
+function Content({postList, setPostList}) {
+
+
   return (
-    <div className='content'> 
-        <div className='content'>
-          {postList.map(data2 => <DataCard className="content" dataObj={data2} key={data2.id} />)}
-        </div>
+    <div className='content' key={"main"}> 
+
+          {postList.map(data2 => <DataCard dataObj={data2}/>)}
+
     </div>
   )
 }

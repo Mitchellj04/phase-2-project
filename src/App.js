@@ -8,20 +8,24 @@ import Mountain from "./component/Category/Mountain/Mountain";
 import Camping from "./component/Category/Camping/Camping"
 import Town from "./component/Category/Town/Town"
 import Contact from "./component/Contact/Contact";
+import ChallengeFour from "./component/ChallengeFour";
 import { useEffect, useState } from "react";
 
 
 function App() {
-const [postList, setPostList] = useState([])
+const [postList, setPostList] = useState([1])
+const [name, setName] = useState("Justin")
 
+console.log("App function")
 
 useEffect(() => {
- fetch('http://localhost:5000/data2')
+  console.log("useEffect-App")
+ fetch('http://localhost:4005/data2')
  .then(resp => resp.json())
  .then(data2 => {
    setPostList(data2)
-   
  })
+ .catch((err) => console.log(err))
 },[])
 
   return (
@@ -29,7 +33,7 @@ useEffect(() => {
       <NavBar postList={postList} setPostList={setPostList}/>
       <Switch>
         <Route exact path="/">
-          <Home postList={postList} />
+          <Home postList={postList} setPostList={setPostList}/>
         </Route>
         <Route path="/about">
           <AboutMe />
@@ -51,6 +55,9 @@ useEffect(() => {
         </Route>
         <Route path="/town">
           <Town />
+        </Route>
+        <Route path="/challenge">
+          <ChallengeFour name={name} setName={setName}/>
         </Route>
       </Switch>
     </Router>

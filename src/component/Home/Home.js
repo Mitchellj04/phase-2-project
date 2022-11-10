@@ -4,14 +4,13 @@ import Header from '../Header/Header'
 import Content from '../Posts/Content/Content'
 import About from '../About/AboutMe'
 
-function Home({postList}) {
-
+function Home({postList, setPostList}) {
 
   return (
     <>
       <Header />
       <div className='home'>
-        <Content postList={postList} />
+        <Content postList={postList} setPostList={setPostList} />
         <About />
       </div>
     </>
